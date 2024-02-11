@@ -61,3 +61,4 @@
           (lambda ()
             (setq gc-cons-threshold 16777216
                   gc-cons-percentage 0.1)))
+(put 'upcase-region 'disabled nil)
