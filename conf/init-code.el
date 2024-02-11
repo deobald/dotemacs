@@ -19,6 +19,14 @@
   (setq web-mode-code-indent-offset 2)
   (setq web-mode-css-indent-offset 2))
 
+(use-package javascript-mode
+  :mode (("\\.js\\'" . javascript-mode)
+         ("\\.mjs\\'"   . javascript-mode))
+  :config
+  (setq js-indent-level 4)
+  (setq-default js2-basic-offset 4)
+  (setq javascript-mode-code-indent-offset 4))
+
 (use-package yaml-mode)
 
 (use-package json-mode)
