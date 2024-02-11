@@ -25,6 +25,7 @@
       (eval-print-last-sexp)))
   (load bootstrap-file nil 'nomessage))
 (straight-use-package 'use-package)
+(package-initialize)
 
 ;; Move custom configuration variables set by Emacs, to a seperate file
 (setq custom-file "~/.emacs.d/custom.el")
