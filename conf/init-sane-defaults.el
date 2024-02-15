@@ -7,7 +7,7 @@
 
 ;; Use spaces instead of tabs
 (setq tab-width 2)
-(setq js-indent-level 2)
+(setq js-indent-level 4)
 (setq css-indent-offset 2)
 (setq c-basic-offset 2)
 (setq-default indent-tabs-mode nil)
@@ -51,5 +51,9 @@
 
 ;; https://github.com/pashky/restclient.el/issues/212
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
+
+;; https://github.com/syl20bnr/spacemacs/issues/15426
+(with-eval-after-load 'undo-tree
+  (setq undo-tree-auto-save-history nil))
 
 (provide 'init-sane-defaults)
