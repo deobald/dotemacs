@@ -10,6 +10,11 @@
   (add-hook 'gfm-mode-hook 'linum-mode)
   (add-hook 'markdown-mode-hook 'linum-mode))
 
+(use-package nvm
+  ;; :straight (:host github :repo "rejeep/nvm.el")
+  :config
+  (nvm-use "20"))
+
 (use-package web-mode
   :mode (("\\.html?\\'" . web-mode)
          ("\\.css\\'"   . web-mode)
