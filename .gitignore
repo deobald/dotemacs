@@ -23,3 +23,5 @@ smex-items
 init-user.el
 emojis/
 session.*
+eln-cache/
+

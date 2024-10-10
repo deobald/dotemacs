@@ -33,13 +33,14 @@
 
 ;; Load custom configurations
 ;; These required in a "valid" order
+
 (require 'init-efuns)
 (require 'init-sane-defaults)
 (require 'init-appearance)
 (require 'init-editing)
 (require 'init-lsp)
 (require 'init-code)
-(require 'init-clojure)
+;; (require 'init-clojure)
 (require 'init-completions)
 (require 'init-dired)
 (require 'init-git)
@@ -49,16 +50,18 @@
 
 ;; User customizations
 ;; Add your customizations / overrides to *user-customizations-path*
+
 (defconst *user-customizations-path* "~/.emacs.d/init-user.el")
 (when (file-exists-p *user-customizations-path*)
   (setq user-custom-file *user-customizations-path*)
-  (load user-custom-file)
+  (load user-custom-file))
+
 (put 'narrow-to-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
 
 ;; Reset GC to reasonable defaults
 (add-hook 'emacs-startup-hook
           (lambda ()
             (setq gc-cons-threshold 16777216
                   gc-cons-percentage 0.1)))
-(put 'upcase-region 'disabled nil)
-(put 'downcase-region 'disabled nil)
