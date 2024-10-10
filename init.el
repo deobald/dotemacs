@@ -53,7 +53,6 @@
 (when (file-exists-p *user-customizations-path*)
   (setq user-custom-file *user-customizations-path*)
   (load user-custom-file)
-  (put 'downcase-region 'disabled nil))
 (put 'narrow-to-region 'disabled nil)
 
 ;; Reset GC to reasonable defaults
@@ -62,3 +61,4 @@
             (setq gc-cons-threshold 16777216
                   gc-cons-percentage 0.1)))
 (put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
