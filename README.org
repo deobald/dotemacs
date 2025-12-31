@@ -8,6 +8,9 @@ See ~Installing Emacs~ below.
 *** Dependency: Fonts
 Install [[https://github.com/tonsky/FiraCode][Fira Code]] for text and [[https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Inconsolata/complete/Inconsolata%20Nerd%20Font%20Complete.otf][Inconsolata Nerd Font]] for modeline.
 
+*** Dependency: Node, npm, nvm
+Install [[https://nodejs.org/en/download][Nodejs]] with npm and nvm.
+
 *** Dependency: LSP servers
 **** Through ~lsp-install-server~
 

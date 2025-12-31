@@ -44,7 +44,7 @@
 (require 'init-completions)
 (require 'init-dired)
 (require 'init-git)
-(require 'init-org)
+;; (require 'init-org)
 (require 'init-projectile)
 (require 'init-keybinds)
 

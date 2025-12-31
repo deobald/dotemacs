@@ -27,7 +27,7 @@
 
 ;; Kills the current buffer without displaying the annoying menu.
 ;; A confirmation will be asked for, if the buffer has been modified
-(global-set-key (kbd "C-x k") 'kill-this-buffer)
+(global-set-key (kbd "C-x k") 'kill-current-buffer)
 
 ;; Remove trailing whitespace before saving
 (add-hook 'before-save-hook 'delete-trailing-whitespace)

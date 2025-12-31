@@ -13,7 +13,7 @@
 (use-package nvm
   ;; :straight (:host github :repo "rejeep/nvm.el")
   :config
-  (nvm-use "20"))
+  (nvm-use "22"))
 
 (use-package web-mode
   :mode (("\\.html?\\'" . web-mode)
